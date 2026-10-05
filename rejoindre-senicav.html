@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Présentez votre candidature pour rejoindre SENICAV et développer votre parcours artistique.">
+  <meta name="theme-color" content="#070707">
+  <title>Rejoindre SENICAV | Talents</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="join-page">
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html#accueil" class="logo" aria-label="SENICAV - Accueil">SENICAV</a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#talents">Talents</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#marques">Marques</a>
+        <a href="index.html#realisations">Réalisations</a>
+        <a href="index.html#actualites">Actualités</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="join-hero">
+      <div class="container join-hero-inner">
+        <div class="join-hero-copy">
+          <span class="eyebrow">REJOINDRE SENICAV</span>
+          <span class="join-badge">TALENTS SENICAV</span>
+          <h1>Votre talent mérite d'être valorisé.</h1>
+          <p>SENICAV accompagne les talents africains et francophones dans leur développement, leur visibilité et la création de nouvelles opportunités professionnelles.</p>
+          <a class="btn btn-primary" href="#candidature">Présenter ma candidature</a>
+        </div>
+        <div class="join-hero-aside" aria-hidden="true">
+          <span class="join-aside-index">01 / TALENTS</span>
+          <p>Un parcours singulier.<br>De nouvelles possibilités.</p>
+          <span class="join-aside-rule"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="join-section-heading">
+          <span class="eyebrow">UN ACCOMPAGNEMENT SUR MESURE</span>
+          <h2 id="benefits-title">Pourquoi rejoindre SENICAV ?</h2>
+        </div>
+        <div class="join-benefit-grid">
+          <article class="join-benefit">
+            <span class="join-benefit-number">01</span>
+            <h3>Management de talents</h3>
+          </article>
+          <article class="join-benefit">
+            <span class="join-benefit-number">02</span>
+            <h3>Visibilité &amp; développement d'image</h3>
+          </article>
+          <article class="join-benefit">
+            <span class="join-benefit-number">03</span>
+            <h3>Opportunités professionnelles</h3>
+          </article>
+          <article class="join-benefit">
+            <span class="join-benefit-number">04</span>
+            <h3>Mise en relation avec marques et productions</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-application" id="candidature" aria-labelledby="application-title">
+      <div class="container join-application-layout">
+        <div class="join-application-intro">
+          <span class="eyebrow">VOTRE PROCHAIN CHAPITRE</span>
+          <h2 id="application-title">Déposez votre candidature</h2>
+          <p>Vous êtes acteur, influenceur, créateur de contenu, professionnel de l'image, sportif, musicien ou artiste ? Présentez-nous votre profil.</p>
+          <p class="join-required-note"><span aria-hidden="true">*</span> Champs obligatoires</p>
+        </div>
+
+        <form class="join-form" id="application-form">
+          <div class="join-form-grid">
+            <div class="join-field">
+              <label for="full-name">Nom et prénom <span aria-hidden="true">*</span></label>
+              <input id="full-name" name="full-name" type="text" autocomplete="name" required>
+            </div>
+            <div class="join-field">
+              <label for="artist-name">Nom d'artiste / pseudonyme</label>
+              <input id="artist-name" name="artist-name" type="text" autocomplete="nickname">
+            </div>
+            <div class="join-field">
+              <label for="category">Catégorie <span aria-hidden="true">*</span></label>
+              <select id="category" name="category" required>
+                <option value="" selected disabled>Sélectionnez une catégorie</option>
+                <option>Acteurs &amp; Actrices</option>
+                <option>Influenceurs</option>
+                <option>Créateurs de contenu</option>
+                <option>Professionnels de l'image</option>
+                <option>Sportifs</option>
+                <option>Musiciens &amp; Artistes</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="join-field">
+              <label for="phone">Téléphone / WhatsApp <span aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="join-field">
+              <label for="email">Adresse e-mail <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="join-field">
+              <label for="location">Ville / Pays</label>
+              <input id="location" name="location" type="text" autocomplete="address-level2">
+            </div>
+            <div class="join-field">
+              <label for="instagram">Instagram</label>
+              <input id="instagram" name="instagram" type="url" inputmode="url" placeholder="https://">
+            </div>
+            <div class="join-field">
+              <label for="tiktok">TikTok</label>
+              <input id="tiktok" name="tiktok" type="url" inputmode="url" placeholder="https://">
+            </div>
+            <div class="join-field">
+              <label for="youtube">YouTube</label>
+              <input id="youtube" name="youtube" type="url" inputmode="url" placeholder="https://">
+            </div>
+            <div class="join-field join-field-full">
+              <label for="introduction">Présentez-vous <span aria-hidden="true">*</span></label>
+              <textarea id="introduction" name="introduction" rows="5" required aria-describedby="introduction-hint"></textarea>
+              <span class="join-field-hint" id="introduction-hint">Parlez-nous de votre parcours et de votre univers.</span>
+            </div>
+            <div class="join-field join-field-full">
+              <label for="specialties">Vos spécialités <span aria-hidden="true">*</span></label>
+              <textarea id="specialties" name="specialties" rows="3" required></textarea>
+            </div>
+            <div class="join-field join-field-full">
+              <label for="portfolio">Lien vers votre portfolio / vidéo</label>
+              <input id="portfolio" name="portfolio" type="url" inputmode="url" placeholder="https://">
+            </div>
+            <div class="join-field join-field-full">
+              <label for="photo">Photo professionnelle</label>
+              <input id="photo" name="photo" type="file" accept="image/*" aria-describedby="photo-hint">
+              <span class="join-field-hint" id="photo-hint">Sélectionnez un fichier image depuis votre appareil.</span>
+            </div>
+            <div class="join-field-full">
+              <label class="join-consent" for="consent">
+                <input id="consent" name="consent" type="checkbox" required>
+                <span>J'accepte que les informations transmises soient utilisées par SENICAV dans le cadre de l'étude de ma candidature.</span>
+              </label>
+            </div>
+            <div class="join-field-full join-submit-row">
+              <button class="btn btn-primary join-submit" type="submit">ENVOYER MA CANDIDATURE</button>
+              <p class="join-form-message" id="form-message" role="status" tabindex="-1" hidden>Merci pour votre candidature. Votre profil a bien été préparé pour être transmis à SENICAV.</p>
+              <p class="join-privacy-note">Votre candidature est préparée dans cette page. Aucune donnée n'est transmise à un service externe.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="join-advice" aria-labelledby="advice-title">
+      <div class="container join-advice-inner">
+        <span class="eyebrow">L'ESSENTIEL</span>
+        <h2 id="advice-title">Un profil authentique avant tout.</h2>
+        <p>Pas besoin d'avoir déjà une grande audience. SENICAV recherche avant tout des talents sérieux, créatifs, motivés et prêts à évoluer.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html#accueil" class="logo">SENICAV</a>
+          <p>Talents, création et opportunités pour une nouvelle génération créative africaine.</p>
+        </div>
+        <div class="footer-navigation">
+          <h3>Navigation</h3>
+          <a href="index.html#accueil">Accueil</a>
+          <a href="index.html#talents">Talents</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#marques">Marques</a>
+          <a href="index.html#realisations">Réalisations</a>
+          <a href="index.html#actualites">Actualités</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-services">
+          <h3>Services</h3>
+          <p>Management de talents</p>
+          <p>Influence Marketing</p>
+          <p>Création de contenu</p>
+          <p>Casting &amp; Talents</p>
+          <p>Production audiovisuelle</p>
+          <p>Campagnes 360°</p>
+        </div>
+        <div class="footer-socials">
+          <h3>Réseaux</h3>
+          <a href="https://www.instagram.com/Senicav_senegal" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@Senicavsenegal" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a href="https://www.youtube.com/@SenicavTV" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://www.linkedin.com/in/alassane-camara/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SENICAV. Tous droits réservés.</p>
+        <p>Créé par Alassane Camara</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const applicationForm = document.querySelector('#application-form');
+    const formMessage = document.querySelector('#form-message');
+
+    applicationForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      if (!applicationForm.reportValidity()) {
+        return;
+      }
+
+      formMessage.hidden = false;
+      formMessage.focus();
+      applicationForm.reset();
+    });
+  </script>
+</body>
+</html>

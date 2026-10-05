@@ -1601,3 +1601,184 @@ select:focus-visible {
     font-size: 19px;
   }
 }
+
+/* Fiche acteur 01 */
+.actor-profile {
+  padding-top: 128px;
+}
+
+.actor-profile-back {
+  margin-bottom: 34px;
+}
+
+.actor-profile-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  align-items: center;
+  gap: 64px;
+}
+
+.actor-profile-photo {
+  max-width: none;
+  margin: 0;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #111;
+  color: var(--gold-light);
+  font-size: 1rem;
+}
+
+.actor-profile-intro {
+  max-width: 560px;
+}
+
+.actor-profile-badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border: 1px solid var(--border);
+  color: var(--gold-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.actor-profile-category {
+  margin-top: 28px;
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+.actor-profile-intro h1 {
+  margin: 8px 0 20px;
+  font-size: 64px;
+  line-height: 1.05;
+}
+
+.actor-profile-lead {
+  max-width: 480px;
+  margin-bottom: 30px;
+  color: var(--white-soft);
+  font-size: 1.1rem;
+}
+
+.actor-profile-section {
+  padding: 54px 0;
+  border-top: 1px solid var(--border-light);
+}
+
+.actor-profile-section h2 {
+  margin-bottom: 22px;
+  color: var(--gold-light);
+  font-size: 1.8rem;
+}
+
+.actor-profile-section > p {
+  max-width: 800px;
+  color: var(--white-soft);
+}
+
+.actor-profile-specialties {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  list-style: none;
+}
+
+.actor-profile-specialties li {
+  padding: 18px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  background: #0d0d0d;
+  color: var(--white-soft);
+}
+
+.actor-profile-info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.actor-profile-info dt {
+  margin-bottom: 6px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.actor-profile-info dd {
+  color: var(--white-soft);
+}
+
+.actor-profile-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.actor-profile-socials a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 200px;
+  padding: 16px 18px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  color: var(--white);
+  transition: var(--transition);
+}
+
+.actor-profile-socials a:hover {
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
+.actor-profile-socials span {
+  color: var(--gray);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .actor-profile-hero {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .actor-profile-photo {
+    width: min(100%, 560px);
+    margin: 0 auto;
+  }
+
+  .actor-profile-intro {
+    max-width: 680px;
+  }
+
+  .actor-profile-specialties {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .actor-profile {
+    padding-top: 110px;
+  }
+
+  .actor-profile-intro h1 {
+    font-size: 44px;
+  }
+
+  .actor-profile-section {
+    padding: 38px 0;
+  }
+
+  .actor-profile-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .actor-profile-info {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .actor-profile-socials a {
+    width: 100%;
+  }
+}

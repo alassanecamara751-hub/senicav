@@ -78,7 +78,7 @@
           <p class="join-required-note"><span aria-hidden="true">*</span> Champs obligatoires</p>
         </div>
 
-        <form class="join-form" id="application-form">
+        <form class="join-form" id="application-form" action="https://formspree.io/f/xzedbwno" method="POST" enctype="multipart/form-data">
           <div class="join-form-grid">
             <div class="join-field">
               <label for="full-name">Nom et prénom <span aria-hidden="true">*</span></label>
@@ -140,19 +140,18 @@
             </div>
             <div class="join-field join-field-full">
               <label for="photo">Photo professionnelle</label>
-              <input id="photo" name="photo" type="file" accept="image/*" aria-describedby="photo-hint">
-              <span class="join-field-hint" id="photo-hint">Sélectionnez un fichier image depuis votre appareil.</span>
+              <input id="photo" name="photo" type="file" accept="image/*" aria-describedby="photo-hint" disabled>
+              <span class="join-field-hint" id="photo-hint">L’envoi de votre photo professionnelle sera disponible prochainement.</span>
             </div>
             <div class="join-field-full">
               <label class="join-consent" for="consent">
-                <input id="consent" name="consent" type="checkbox" required>
+                <input id="consent" name="consent" type="checkbox" value="yes" required>
                 <span>J'accepte que les informations transmises soient utilisées par SENICAV dans le cadre de l'étude de ma candidature.</span>
               </label>
             </div>
             <div class="join-field-full join-submit-row">
               <button class="btn btn-primary join-submit" type="submit">ENVOYER MA CANDIDATURE</button>
-              <p class="join-form-message" id="form-message" role="status" tabindex="-1" hidden>Merci pour votre candidature. Votre profil a bien été préparé pour être transmis à SENICAV.</p>
-              <p class="join-privacy-note">Votre candidature est préparée dans cette page. Aucune donnée n'est transmise à un service externe.</p>
+              <p class="join-privacy-note">Votre candidature sera transmise à SENICAV via Formspree.</p>
             </div>
           </div>
         </form>
@@ -209,21 +208,5 @@
     </div>
   </footer>
 
-  <script>
-    const applicationForm = document.querySelector('#application-form');
-    const formMessage = document.querySelector('#form-message');
-
-    applicationForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-
-      if (!applicationForm.reportValidity()) {
-        return;
-      }
-
-      formMessage.hidden = false;
-      formMessage.focus();
-      applicationForm.reset();
-    });
-  </script>
 </body>
 </html>
